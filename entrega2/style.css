@@ -1,0 +1,74 @@
+/* Entrega 2 — CSS (sem Flexbox, sem inline CSS) */
+
+/* Corpo: 60% de largura, centralizado, padding vertical; fonte e espaçamento 1.5 */
+body {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2% 0;
+  background: #eef2f7;                          /* fundo da página ≠ branco */
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif; /* fonte alterada */
+  line-height: 1.5;                              /* espaçamento entre linhas */
+  color: #222;
+}
+
+/* Parte principal branca com bordas arredondadas e overflow (um dos requisitos: overflow/float/position) */
+main {
+  background: #fff;                              /* conteúdo principal branco */
+  padding: 16px;                                 /* padding alterado */
+  border: 1px solid #ddd;                        /* border alterada */
+  border-radius: 10px;                           /* cantos arredondados */
+  overflow: auto;                                /* requisito: uso de overflow */
+}
+
+/* Títulos: mesma cor (≠ preta) para todos */
+h1, h2, h3 {
+  color: #284b63;
+  margin-top: 0.6em;
+}
+
+/* Menu de navegação com display inline-block (requisito) */
+nav a {
+  display: inline-block;                         /* pedido no enunciado */
+  padding: 8px 12px;
+  margin: 4px 2px;
+  text-decoration: none;
+  color: #284b63;
+  border: 1px solid #284b63;
+  border-radius: 6px;
+}
+
+/* Pseudo-classe obrigatória */
+nav a:hover {
+  background: #284b63;
+  color: #fff;
+}
+
+/* Float: foto no início para cumprir o requisito (float/overflow/position) */
+#inicio img {
+  float: left;
+  margin: 0 16px 8px 0;                          /* margin alterada */
+  border: 3px solid #ddd;                        /* border alterada */
+  border-radius: 8px;
+}
+
+/* Seletor por ID: detalhe visual na seção de experiência */
+#experiencia article {
+  border-left: 4px solid #284b63;
+  padding-left: 10px;
+  margin: 8px 0;
+}
+
+/* Seletor de atributo: links externos */
+a[target="_blank"] {
+  font-style: italic;
+}
+
+/* Seletor descendente e de filho direto, para variedade de seletores */
+header nav a { letter-spacing: 0.2px; }
+main > section { margin-bottom: 18px; }
+
+/* Rodapé simples */
+footer {
+  font-size: 0.9rem;
+  color: #555;
+}
